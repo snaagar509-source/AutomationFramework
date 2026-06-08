@@ -1,45 +1,38 @@
 package pom;
 
-import java.time.Duration;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Login {
-	WebDriver driver;
-
-
+	
 	public Login(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		
 	}
-
-	@FindBy(id = "user-name")
+	
+	@FindBy(name = "user_name")
 	private WebElement un;
-
+	
+	@FindBy(name = "user_password")
+	private WebElement pwd;
+	
+	@FindBy(id = "submitButton")
+	private WebElement loginbtn;
+	
+	
 	public WebElement getUn() {
 		return un;
 	}
-
-	@FindBy(id = "password")
-	private WebElement pwd;
-
+	
 	public WebElement getPwd() {
 		return pwd;
 	}
-
-	@FindBy(id = "login-button")
-	private WebElement logbtn;
-
-	public WebElement getLoginbtn() {
-		return logbtn;
+	
+	public WebElement getLoginBtn() {
+		return loginbtn;
 	}
 	
 	
-	
-		
-
-	}
+}
