@@ -1,0 +1,5 @@
+{
+Browser :"ChromeDriver",
+UserName : "admin",
+Password : "Password"
+}

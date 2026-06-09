@@ -50,5 +50,10 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>Framework</groupId>
+			<artifactId>Framework1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
